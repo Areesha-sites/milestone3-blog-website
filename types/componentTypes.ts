@@ -119,7 +119,6 @@ export interface FlipsWordsPropTypes {
 }
 export interface CoverPropTypes {
   children?: React.ReactNode;
-  className?: string;
 }
 export interface BeamPropTypes {
   className?: string;

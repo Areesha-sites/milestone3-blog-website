@@ -132,7 +132,6 @@ const Cover = ({
 };
 import { BeamPropTypes } from "../../../types/componentTypes";
 export const Beam = ({
-  className,
   delay,
   duration,
   hovered,
@@ -189,7 +188,6 @@ export const Beam = ({
 }
 import { CircleIconTypes } from "../../../types/componentTypes";
 export const CircleIcon = ({
-  
   delay,
 }: CircleIconTypes) => {
   return (
