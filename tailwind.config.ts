@@ -1,5 +1,4 @@
 import type { Config } from "tailwindcss";
-
 export default {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -11,6 +10,13 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+      },
+      fontFamily: {
+        inter: ["inter", "serif"],
+        righteous: ["righteous", "serif"],
+        bebasNeue: ["bebasNeue", "serif"],
+        anton: ["anton", "serif"]
+
       },
     },
   },
