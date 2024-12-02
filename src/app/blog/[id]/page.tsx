@@ -9,8 +9,8 @@ async function fetchBlogData(id: string): Promise<BlogTypes | null> {
   const blogs = JSON.parse(fileContent);
   return blogs.find((blog: BlogTypes) => blog.id.toString() === id) || null;
 }
-const BlogDetails = async ({ params }: { params: { id: string } }) => {
-  const { id } = params; 
+const BlogDetails = async ({ params }: { params: Promise<{ id: string }> }) => {
+  const { id } = await params; 
   const blog = await fetchBlogData(id);
   if (!blog) {
     return <p>Blog not found!</p>;
