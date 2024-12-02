@@ -23,10 +23,10 @@ export const AnimatedTestimonials = ({
   };
   useEffect(() => {
     if (autoplay) {
-      const interval = setInterval(handleNext, 5000);
-      return () => clearInterval(interval);
+        const interval = setInterval(handleNext, 5000);
+        return () => clearInterval(interval);
     }
-  }, [autoplay]);
+}, [autoplay, handleNext]);
 
   const randomRotateY = () => {
     return Math.floor(Math.random() * 21) - 10;

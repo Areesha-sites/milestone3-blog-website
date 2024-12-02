@@ -13,8 +13,8 @@ const Cover = ({
   const [beamPositions, setBeamPositions] = useState<number[]>([]);
   useEffect(() => {
     if (ref.current) {
-      setContainerWidth(ref.current?.clientWidth ?? 0);
-      const height = ref.current?.clientHeight ?? 0;
+      setContainerWidth(ref.current.clientWidth ?? 0);
+      const height = ref.current.clientHeight ?? 0;
       const numberOfBeams = Math.floor(height / 10);
       const positions = Array.from(
         { length: numberOfBeams },
@@ -22,7 +22,7 @@ const Cover = ({
       );
       setBeamPositions(positions);
     }
-  }, [ref.current]);
+  }, []);
   return (
     <div
       onMouseEnter={() => setHovered(true)}
@@ -189,7 +189,7 @@ export const Beam = ({
 }
 import { CircleIconTypes } from "../../../types/componentTypes";
 export const CircleIcon = ({
-  className,
+  className = '',
   delay,
 }: CircleIconTypes) => {
   return (

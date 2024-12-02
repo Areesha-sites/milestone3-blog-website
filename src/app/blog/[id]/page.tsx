@@ -42,9 +42,11 @@ const BlogDetails = async ({ params }: { params: { id: string } }) => {
         </div>
         <div className="text-gray-600 mb-4">
           <p className="flex items-center mb-4 justify-center">
-            <img
+            <Image
               src={authorPic}
               alt={author}
+              height={200}
+              width={200}
               className="xl:w-14 xl:h-14 h-10 w-10 2xl:h-16 2xl:w-16 rounded-full mr-2"
             />
             <span className="text-gray-500 pt-4 text-[12px] xl:text-[13px] 2xl:text-[16px] whitespace-nowrap mb-4">
