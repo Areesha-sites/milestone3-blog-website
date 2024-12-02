@@ -139,4 +139,5 @@ export interface CategorySelectionTypes {
 export interface CategorySelectionPropTypes {
   onSelectCategory: (category: string | null) => void;
   activeCategory: string | null;
+  selectedCategory: string | null;
 }
