@@ -189,7 +189,7 @@ export const Beam = ({
 }
 import { CircleIconTypes } from "../../../types/componentTypes";
 export const CircleIcon = ({
-  className = '',
+  
   delay,
 }: CircleIconTypes) => {
   return (
@@ -202,7 +202,7 @@ export const CircleIcon = ({
         repeat: Infinity,
         repeatType: "reverse",
       }}
-      className={`h-2 w-2 rounded-full bg-neutral-600 dark:bg-white ${className}`}
+      className={`h-2 w-2 rounded-full bg-neutral-600 dark:bg-white `}
     ></motion.div>
   );
 };
