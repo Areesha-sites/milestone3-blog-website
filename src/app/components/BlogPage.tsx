@@ -5,15 +5,15 @@ import Pagination from "./Pagination";
 import CategorySelection from "./CategorySelection";
 import SideBar from "./SideBar";
 const BlogPage = () => {
-  const [blogs, setBlogs] = useState([]);
+  const [blogs, setBlogs] = useState([]); 
   const [currentPage, setCurrentPage] = useState(1);
   const pageSize = 15;
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
-  const [activeCategory, setActiveCategory] = useState(null);
+
   useEffect(() => {
     const fetchBlogs = async () => {
       try {
-        let url = `/data/blogsData.json`;
+        const url = `/data/blogsData.json`;
         const response = await fetch(url);
         if (!response.ok) {
           throw new Error("Failed to fetch blogs");
@@ -26,32 +26,35 @@ const BlogPage = () => {
     };
     fetchBlogs();
   }, []);
+
   const handlePageChange = (pageNumber: number) => {
     setCurrentPage(pageNumber);
   };
+
   const handleCategoryChange = (category: string | null) => {
     setSelectedCategory(category);
     setCurrentPage(1);
   };
+
   return (
     <div className="container mx-auto px-4 ">
       <div className="">
         <CategorySelection
           onSelectCategory={handleCategoryChange}
           selectedCategory={selectedCategory}
-          activeCategory={activeCategory}
+          activeCategory={selectedCategory} 
         />
       </div>
       <div className="flex flex-col lg:flex-row justify-between ml-[2%] gap-9">
-      <BlogCards
-        blogs={blogs}
-        currentPage={currentPage}
-        selectedCategory={selectedCategory}
-        pageSize={pageSize}
-      />  
-      <div className="">
-      <SideBar/>
-      </div>
+        <BlogCards
+          blogs={blogs}
+          currentPage={currentPage}
+          selectedCategory={selectedCategory}
+          pageSize={pageSize}
+        />
+        <div className="">
+          <SideBar />
+        </div>
       </div>
       <Pagination
         currentPage={currentPage}
@@ -62,4 +65,5 @@ const BlogPage = () => {
     </div>
   );
 };
+
 export default BlogPage;

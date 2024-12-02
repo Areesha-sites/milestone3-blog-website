@@ -2,6 +2,7 @@
 import { FaUser } from "react-icons/fa";
 import Link from "next/link";
 import { BlogCardsPropTypes } from "../../../types/componentTypes";
+import Image from "next/image";
 const BlogCards: React.FC<BlogCardsPropTypes> = ({ blogs, currentPage, selectedCategory, pageSize }) => {
   const filteredBlogs = blogs.filter(
     (blog) => !selectedCategory || blog.category === selectedCategory
@@ -19,9 +20,11 @@ const BlogCards: React.FC<BlogCardsPropTypes> = ({ blogs, currentPage, selectedC
           className="p-3 shadow-lg bg-white rounded cursor-pointer"
         >
           <div>
-            <img
+            <Image
               src={blog.image}
               alt={blog.title}
+              height={200}
+              width={200}
               className="w-full xl:h-[28vh] h-[30vh] md:h-[43vh] object-cover"
             />
           </div>

@@ -1,6 +1,9 @@
 import React from "react";
-const CategorySelection = ({ onSelectCategory, activeCategory }: any) => {
-  const categories = [
+import { CategorySelectionTypes } from "../../../types/componentTypes";
+import { CategorySelectionPropTypes } from "../../../types/componentTypes";
+import Image from "next/image";
+const CategorySelection = ({ onSelectCategory, activeCategory }: CategorySelectionPropTypes) => {
+  const categories: CategorySelectionTypes[] = [
     { name: "Mindfulness", bgColor: "#FFEBCC", imgSrc: "/mindfulness.jpg" },
     { name: "Leadership", bgColor: "#E0F7FA", imgSrc: "/leadership.jpg" },
     { name: "Motivation", bgColor: "#FCE4EC", imgSrc: "/motivation.jpg" },
@@ -33,9 +36,11 @@ const CategorySelection = ({ onSelectCategory, activeCategory }: any) => {
             backgroundColor: category.bgColor,
           }}
         >
-          <img
+          <Image
             src={category.imgSrc}
             alt={category.name}
+            height={20}
+            width={20}
             className="w-5 h-5 2xl:h-8 2xl:w-8 rounded-full mr-2"
           />
           {category.name}

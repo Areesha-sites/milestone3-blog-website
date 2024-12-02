@@ -7,6 +7,7 @@ import {
 } from "framer-motion";
 import React, { useEffect, useRef, useState } from "react";
 import { TimelineEntryTypes } from "../../../types/componentTypes";
+import Image from "next/image";
 const Timeline = ({ data }: { data: TimelineEntryTypes[] }) => {
   const ref = useRef<HTMLDivElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
@@ -45,12 +46,14 @@ const Timeline = ({ data }: { data: TimelineEntryTypes[] }) => {
             Growing up, I always had a deep passion for writing. Whether it was
             scribbling in journals or drafting poems, words became my way to
             express emotions and ideas. However, I never thought these small
-            scribbles would one day transform into something much bigger — a
+            scribbles would one day transform into something much bigger a
             blog that connects me with people worldwide.
           </p>
-          <img
+          <Image
             src="/book1'.jpg"
             alt="my-book"
+            height={200}
+            width={200}
             className="xl:w-[270px] xl:h-[220px] xl:mt-10 h-[200px] w-[200px] md:h-[200px] md:w-[220px] mt-4 rounded-2xl shadow-xl cursor-pointer"
           />
         </div>
@@ -69,7 +72,6 @@ const Timeline = ({ data }: { data: TimelineEntryTypes[] }) => {
                 {item.title}
               </h3>
             </div>
-
             <div className="relative pl-20 pr-4 md:pl-4 w-full">
               <h3 className="md:hidden block xl:text-2xl text-[20px]  mb-4 text-left font-bold text-neutral-500 dark:text-neutral-500">
                 {item.title}
@@ -93,7 +95,6 @@ const Timeline = ({ data }: { data: TimelineEntryTypes[] }) => {
           />
         </div>
       </div>
-
       <div className="xl:max-w-7xl mx-auto xl:py-10 px-[43px] md:px-8 lg:px-10 ">
         <h3 className="text-gray-500 uppercase dark:text-neutral-300 font-inter font-bold xl:mt-5 text-[14px] -mt-7 xl:text-[18px]">
           5. A Note to My Readers: Thank You for Being Here.
@@ -103,21 +104,19 @@ const Timeline = ({ data }: { data: TimelineEntryTypes[] }) => {
           support.
         </p>
         <div className="flex justify-center items-center xl:w-[80%] mx-auto pb-8">
-          <p className=" xl:text-[15px] text-[12px] mt-3 text-gray-500 xl:w-[80%] xl:mt-5">
-            To everyone who reads, comments, or shares my content — thank you
-            from the bottom of my heart. You are the reason I keep pushing
-            forward, learning, and growing. Let&apos;s continue this journey
-            together!
-            <br />
-            <br />
-            If you&apos;d like to connect, feel free to{" "}
-            <Link href="/contact" className="text-blue-500 underline hover:text-blue-700">
-              Let&apos;s Connect
-            </Link>
-            .
-          </p>
-         
-        </div>
+  <p className=" xl:text-[15px] text-[12px] mt-3 text-gray-500 xl:w-[80%] xl:mt-5">
+    To everyone who reads, comments, or shares my content thank you
+    from the bottom of my heart. You are the reason I keep pushing
+    forward, learning, and growing. Let&apos;s continue this journey
+    together!
+    <br />
+    <br />
+    If you&apos;d like to connect, feel free to{" "}
+    <Link href="/contact" className="text-blue-500 underline hover:text-blue-700">
+      Let&apos;s Connect
+    </Link>
+  </p>
+</div>
       </div>
     </div>
   );

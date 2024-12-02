@@ -101,7 +101,7 @@ export interface AnimatedTooltipTypes {
   designation: string;
   image: string;
 }
-export interface ParticlesPropsTypes  {
+export interface ParticlesPropsTypes {
   id?: string;
   className?: string;
   background?: string;
@@ -111,7 +111,7 @@ export interface ParticlesPropsTypes  {
   speed?: number;
   particleColor?: string;
   particleDensity?: number;
-};
+}
 export interface FlipsWordsPropTypes {
   words: string[];
   duration?: number;
@@ -131,4 +131,13 @@ export interface BeamPropTypes {
 export interface CircleIconTypes {
   className?: string;
   delay?: number;
+}
+export interface CategorySelectionTypes {
+  name: string;
+  bgColor: string;
+  imgSrc: string;
+}
+export interface CategorySelectionPropTypes {
+  onSelectCategory: (category: string | null) => void;
+  activeCategory: string | null;
 }

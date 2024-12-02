@@ -1,5 +1,6 @@
 import React from "react";
 import Timeline from "./Timeline";
+import Image from "next/image";
 export function TimelineDemo() {
   const data = [
     {
@@ -27,9 +28,11 @@ export function TimelineDemo() {
             I decided to take a chance, and that&apos;s when everything changed.
           </p>
           <div className="flex justify-center items-center mt-5 ">
-            <img
+            <Image
               src="/laptop.jpg"
               alt="laptop"
+              height={300}
+              width={300}
               className="xl:h-[250px] xl:w-[400px] h-[150px] w-[180px] md:h-[200px] md:w-[250px] rounded-2xl shadow-xl cursor-pointer"
             />
           </div>
@@ -58,9 +61,11 @@ export function TimelineDemo() {
             more value to my readers.
           </p>
           <div className="flex justify-center items-center mt-5 ">
-            <img
+            <Image
               src="/vision.jpg"
               alt=""
+              height={300}
+              width={300}
               className="xl:h-[250px] xl:w-[400px] h-[150px] w-[180px] md:h-[200px] md:w-[250px] rounded-2xl shadow-xl cursor-pointer"
             />
           </div>
@@ -81,18 +86,17 @@ export function TimelineDemo() {
             Over time, this blog started to gain traction. From getting my first
             comment to crossing [number] of readers, every milestone made me
             believe in this journey even more.
-           
           </p>
-         
           <div className="flex justify-center items-center mt-5 ">
-            <img
+            <Image
               src="/like.jpg"
               alt="like-image"
+              height={300}
+              width={300}
               className="xl:h-[250px] xl:w-[300px]  h-[150px] w-[180px] md:h-[200px] md:w-[250px]   rounded-2xl shadow-xl cursor-pointer"
             />
           </div>
         </div>
-        
       ),
     },
   ];

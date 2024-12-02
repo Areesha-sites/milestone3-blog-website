@@ -1,5 +1,6 @@
 import fs from "fs";
 import path from "path";
+import Image from "next/image";
 import { BlogTypes } from "../../../../types/componentTypes";
 import CommentsSection from "@/app/components/CommentsSection";
 async function fetchBlogData(id: string): Promise<BlogTypes | null> {
@@ -31,9 +32,11 @@ const BlogDetails = async ({ params }: { params: { id: string } }) => {
           {title}
         </h1>
         <div className="flex justify-center mb-8">
-          <img
+          <Image
             src={image}
             alt={title}
+            height={300} 
+            width={300}
             className="rounded-lg xl:h-[300px] xl:w-[550px] h-[200px] w-[300px] md:h-[230px] md:w-[450px] lg:h-[300px] lg:w-[500px] object-cover shadow-xl"
           />
         </div>

@@ -85,7 +85,7 @@ const Faqs = () => {
               </summary>
               <div className="px-4 pb-4 text-[13px] xl:text-[14px] 2xl:text-[18px]">
                 <p>
-                  Your post should align with our blog&apos;s theme, be
+                  Your post should align with our blogs theme, be
                   original, and between 800 to 1500 words.
                 </p>
               </div>
@@ -106,9 +106,8 @@ const Faqs = () => {
               </summary>
               <div className="px-4 pb-4 text-[13px] xl:text-[14px] 2xl:text-[18px]">
                 <p>
-                  {" "}
                   Yes, but only if they are relevant and add value to the
-                  content.{" "}
+                  content.
                 </p>
               </div>
             </details>
@@ -164,8 +163,7 @@ const Faqs = () => {
               </summary>
               <div className="px-4 pb-4 text-[13px] xl:text-[14px] 2xl:text-[18px]">
                 <p>
-                  {" "}
-                  Yes, every email includes an "Unsubscribe" link at the bottom.{" "}
+                  Yes, every email includes an Unsubscribe link at the bottom.
                 </p>
               </div>
             </details>
