@@ -1,5 +1,6 @@
 import React from "react";
 import BlogCard from "./BlogCard";
+import { post } from "../../../sanity/post";
 
 const BlogSection = () => {
   return (
@@ -11,7 +12,7 @@ const BlogSection = () => {
           </h4>
         </div>
         <div className="">
-          <BlogCard />
+          <BlogCard post={post}/>
         </div>
       </section>
     </>
