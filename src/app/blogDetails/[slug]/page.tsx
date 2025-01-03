@@ -16,9 +16,11 @@ import { FaRegStar } from "react-icons/fa6";
 import { MdWatchLater } from "react-icons/md";
 import { ImSpoonKnife } from "react-icons/im";
 import { IoPrintOutline } from "react-icons/io5";
+
 interface BlogDetailsProps {
-  params: { slug: string };
+  params: { slug: string }; // Ensure this matches the dynamic route
 }
+
 export default async function BlogDetails({ params }: BlogDetailsProps) {
   const { slug } = params;
 
@@ -296,4 +298,11 @@ export default async function BlogDetails({ params }: BlogDetailsProps) {
     </div>
   </section>
   );
+}
+export async function generateStaticParams() {
+  const slugs = await client.fetch(`*[_type == "post"].slug.current`);
+
+  return slugs.map((slug: string) => ({
+    slug,
+  }));
 }
