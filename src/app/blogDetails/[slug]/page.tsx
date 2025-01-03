@@ -16,7 +16,6 @@ import { FaRegStar } from "react-icons/fa6";
 import { MdWatchLater } from "react-icons/md";
 import { ImSpoonKnife } from "react-icons/im";
 import { IoPrintOutline } from "react-icons/io5";
-import { useRouter } from "next/router";
 export default async function BlogDetails({ params }) {
   const { slug } = params;
 
