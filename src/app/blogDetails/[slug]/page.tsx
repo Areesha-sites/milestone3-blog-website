@@ -18,12 +18,11 @@ import { ImSpoonKnife } from "react-icons/im";
 import { IoPrintOutline } from "react-icons/io5";
 
 interface BlogDetailsProps {
-  params: { slug: string }; // Ensure this matches the dynamic route
+  params: { slug: string }; // Correctly match the dynamic route
 }
 
 export default async function BlogDetails({ params }: BlogDetailsProps) {
   const { slug } = params; // Destructure the slug from params
-
 
   const query = `*[_type == "post" && slug.current == $slug][0]{
     title,
