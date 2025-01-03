@@ -1,4 +1,3 @@
-import { GetServerSideProps, InferGetServerSidePropsType } from "next";
 import {client} from "../../../sanity/lib/client"
 import Link from "next/link";
 import { FaAngleDoubleRight } from "react-icons/fa";
