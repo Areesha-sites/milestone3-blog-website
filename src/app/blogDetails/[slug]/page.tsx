@@ -18,12 +18,14 @@ import { ImSpoonKnife } from "react-icons/im";
 import { IoPrintOutline } from "react-icons/io5";
 
 interface BlogDetailsProps {
-  params: { slug: string }; // Correctly match the dynamic route
+  params: { slug: string };
 }
 
+// Main BlogDetails Component
 export default async function BlogDetails({ params }: BlogDetailsProps) {
-  const { slug } = params; // Destructure the slug from params
+  const { slug } = params;
 
+  // Query to fetch the blog post
   const query = `*[_type == "post" && slug.current == $slug][0]{
     title,
     summary,
@@ -43,12 +45,14 @@ export default async function BlogDetails({ params }: BlogDetailsProps) {
     author
   }`;
 
-  const post = await client.fetch(query, { slug });
+  try {
+    // Fetch the post using the slug
+    const post = await client.fetch(query, { slug });
 
-  if (!post) {
-    return <div>Post not found</div>; // Handle no post case
-  }
-
+    if (!post) {
+      // Handle case when no post is found
+      return <div>Post not found</div>;
+    }
   return (
     <section className="w-full xl:px-20 lg:px-8 px-5 h-auto bg-slate-100 flex justify-start items-center flex-col md:gap-y-[20px] gap-y-[10px] lg:pt-44 pt-32">
     <div className="flex items-center justify-center gap-[2px]">
@@ -298,11 +302,23 @@ export default async function BlogDetails({ params }: BlogDetailsProps) {
     </div>
   </section>
   );
+}catch (error) {
+  console.error("Error fetching post:", error);
+    return <div>Failed to load the post</div>;
+  }
 }
 export async function generateStaticParams() {
-  const slugs = await client.fetch(`*[_type == "post"].slug.current`);
+  try {
+    // Fetch all slugs from the Sanity CMS
+    const slugs: string[] = await client.fetch(`*[_type == "post"].slug.current`);
 
-  return slugs.map((slug: string) => ({
-    slug,
-  }));
+    // Return the slugs formatted for static paths
+    return slugs.map((slug) => ({
+      slug,
+    }));
+  } catch (error) {
+    // Handle errors during static paths generation
+    console.error("Error generating static params:", error);
+    return [];
+  }
 }
