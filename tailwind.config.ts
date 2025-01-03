@@ -15,8 +15,7 @@ export default {
         btnBgColor: "var(--btnBgColor)",
         bgbuttonColor: "var(--bgbuttonColor)",
         bgButtonHover: "var(--bgButtonHover)",
-        iconColor: "var(--iconColor)"
-
+        iconColor: "var(--iconColor)",
       },
       fontFamily: {
         inter: ["inter", "serif"],
@@ -25,8 +24,7 @@ export default {
         anton: ["anton", "serif"],
         lato: ["lato", "serif"],
         dancingScript: ["dancingScript", "serif"],
-        alexBrush: ["alexBrush"]
-
+        alexBrush: ["alexBrush"],
       },
     },
   },
