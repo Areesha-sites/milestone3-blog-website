@@ -1,7 +1,6 @@
 import React from "react";
 import BlogCard from "./BlogCard";
 import { post } from "../../../sanity/post";
-
 const BlogSection = () => {
   return (
     <>
