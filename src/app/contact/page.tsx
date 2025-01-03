@@ -4,7 +4,6 @@ import { FaFacebook } from "react-icons/fa6";
 import { AiFillInstagram } from "react-icons/ai";
 import { FaTwitter } from "react-icons/fa";
 import Faqs from "../components/Faqs";
-import ContactCardSliderItems from "../components/ContactCardSliderItems";
 const Contact = () => {
   return (
     <div>
@@ -15,8 +14,8 @@ const Contact = () => {
             <span className="text-hoverTextColor">From</span> You!
           </h1>
           <p className="xl:text-[14px] lg:text-[15px] 2xl:text-[17px] md:text-[14px] text-[13px] text-gray-600 font-inter xl:w-[700px]">
-            Got a question, an idea, or just want to say hello? We're here to
-            listen! Drop us a message using the form below and let's start a
+            Got a question, an idea, or just want to say hello? We are here to
+            listen! Drop us a message using the form below and let is start a
             conversation.
           </p>
 

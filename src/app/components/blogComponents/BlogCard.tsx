@@ -4,7 +4,7 @@ import { MdWatchLater } from "react-icons/md";
 import { FaComments } from "react-icons/fa6";
 import Link from "next/link";
 import { urlForImage } from "../../../sanity/lib/image";
-const BlogCard = ({ post }: any) => {
+const BlogCard = ({ post }) => {
   if (!post || !post.slug) {
     return null;
   }

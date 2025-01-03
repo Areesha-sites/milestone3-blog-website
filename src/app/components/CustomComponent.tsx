@@ -3,10 +3,10 @@ import Image from "next/image";
 import { urlForImage } from "../../sanity/lib/image";
 export const components: PortableTextComponents = {
   types: {
-    block: ({ value }: any) => {
+    block: ({ value }) => {
       const style = value.style || "normal";
-      const renderChildren = (children: any) => {
-        return children.map((child: any) => {
+      const renderChildren = (children) => {
+        return children.map((child) => {
           if (child._type === "span") {
             return child.text;
           }
@@ -58,7 +58,7 @@ export const components: PortableTextComponents = {
         </p>
       );
     },
-    image: ({ value }: any) => {
+    image: ({ value }) => {
       return (
         <div className="my-4 flex justify-center">
           <Image
@@ -74,17 +74,17 @@ export const components: PortableTextComponents = {
     },
   },
   marks: {
-    strong: ({ children }: any) => (
+    strong: ({ children }) => (
       <strong className="font-bold text-hoverTextColor md:text-[14px] lg:text-[16px]  text-[12px]">
         {children}
       </strong>
     ),
-    em: ({ children }: any) => (
+    em: ({ children }) => (
       <em className="italic text-hoverTextColor md:text-[14px] lg:text-[16px]  text-[12px]">
         {children}
       </em>
     ),
-    link: ({ children, value }: any) => (
+    link: ({ children, value }) => (
       <a
         href={value.href}
         className="text-blue-500 hover:underline md:text-[14px] lg:text-[16px]  text-[12px]"
@@ -94,7 +94,7 @@ export const components: PortableTextComponents = {
     ),
   },
   list: {
-    bullet: ({ children }: any) => (
+    bullet: ({ children }) => (
       <div className="flex flex-col justify-center">
         <ul className="list-disc pl-5 text-gray-600 md:text-[14px] lg:text-[16px] text-[12px]">
           {children}
@@ -102,7 +102,7 @@ export const components: PortableTextComponents = {
         <div className="border-b-[1px] border-black/10 w-full py-3"></div>
       </div>
     ),
-    number: ({ children }: any) => (
+    number: ({ children }) => (
       <div className="flex flex-col justify-center">
         <ol className="list-decimal pl-5 text-gray-600 md:text-[14px] lg:text-[16px] text-[12px]">
           {children}

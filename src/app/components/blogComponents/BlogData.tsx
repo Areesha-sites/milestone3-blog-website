@@ -58,7 +58,7 @@ export default function BlogsData() {
       <div className="flex flex-col lg:flex-row px-11 mt-12 gap-8">
         <div className="lg:w-3/4 w-full">
           <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
-            {currentPosts.map((post: any) => (
+            {currentPosts.map((post) => (
               <BlogCard post={post} key={post.slug} />
             ))}
           </div>
@@ -72,7 +72,7 @@ export default function BlogsData() {
           </div>
         </div>
         <div className="lg:w-1/4 w-full">
-          <BlogSidebar onSelectCategory={setActiveCategory} />
+          <BlogSidebar/>
         </div>
       </div>
     </>
