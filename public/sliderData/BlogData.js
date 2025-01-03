@@ -1,79 +1,177 @@
 export const blogsSliderData = [
   {
     id: 1,
-    image: "/slider-image1.jpg",
-    title: "Cultivating Mindfulness: A Path to Inner Peace",
+    image: "/slider1.jpg",
+    title: "Lunch Delights: Savor the Perfect Midday Meals",
     subTitle:
-      "Discover the art of mindfulness and how to integrate it into your daily life to reduce stress, enhance focus, and live in the present moment.",
-    modal: "MindfulLife",
+      "Explore a variety of delicious lunch recipes that are quick, easy, and perfect for your busy day. From light bites to hearty meals, find it all here.",
+    modal: "LunchMagic",
     publishedDate: "November 20, 2024",
     readingTime: "7 minutes",
     author: "Alice Harper",
   },
   {
     id: 2,
-    image: "/slider-image2.jpg",
-    title: "The Pillars of Leadership: Inspiring Change and Growth",
+    image: "/slider2.jpg",
+    title: "Healthy Breakfasts: Start Your Day Right",
     subTitle:
-      "Learn the essential qualities of an effective leader, including communication, empathy, and decision-making, to inspire and guide your team to success.",
-    modal: "LeadSmart",
+      "Fuel your mornings with nutritious and tasty breakfast recipes that give you the energy to conquer your day.",
+    modal: "MorningFuel",
     publishedDate: "November 22, 2024",
     readingTime: "6 minutes",
     author: "John Mason",
   },
   {
     id: 3,
-    image: "/motivation.jpg",
-    title: "Fueling Your Motivation: Strategies to Stay Inspired",
+    image: "/slider.jpg",
+    title: "Refreshing Beverages: Sip Your Way to Joy",
     subTitle:
-      "Explore proven techniques to stay motivated and overcome challenges, including visualization, positive reinforcement, and setting achievable goals.",
-    modal: "MotivateNow",
+      "Discover the art of crafting refreshing beverages, from smoothies to iced teas, to keep you energized and refreshed all day.",
+    modal: "SipJoy",
     publishedDate: "November 19, 2024",
     readingTime: "5 minutes",
     author: "Sophia Turner",
   },
   {
     id: 4,
-    image: "/slider-image3.jpg",
-    title: "Achieving Optimal Health: Simple Habits for a Better Life",
+    image: "/slider4.jpg",
+    title: "Vegetarian Wonders: Delicious and Healthy Meals",
     subTitle:
-      "Uncover the secrets to a healthier lifestyle with tips on nutrition, exercise, and mindfulness for long-term well-being.",
-    modal: "HealthyHabits",
+      "Dive into a world of vegetarian recipes packed with flavors and nutrients that satisfy your cravings while staying healthy.",
+    modal: "VeggieLove",
     publishedDate: "November 25, 2024",
     readingTime: "8 minutes",
     author: "Michael Clark",
   },
   {
     id: 5,
-    image: "/emotional-iq.jpg",
-    title: "Emotional Intelligence: The Key to Stronger Relationships",
+    image: "/slider5.jpg",
+    title: "Snack Time: Quick Bites for Every Occasion",
     subTitle:
-      "Understand the importance of emotional intelligence and how to develop it to improve communication, empathy, and self-awareness.",
-    modal: "EQMastery",
+      "Find easy and tasty snack recipes perfect for parties, mid-day cravings, or just a treat to enjoy anytime.",
+    modal: "SnackIdeas",
     publishedDate: "November 18, 2024",
     readingTime: "6 minutes",
     author: "Emma Davis",
   },
   {
     id: 6,
-    image: "/financial-freedom.jpg",
-    title: "Financial Freedom: Steps to Build Wealth and Independence",
+    image: "/slider6.jpg",
+    title: "Quick Meals: Ready in Minutes!",
     subTitle:
-      "Discover practical strategies to manage your finances, reduce debt, and create a sustainable plan for long-term financial independence.",
-    modal: "WealthJourney",
+      "Learn how to prepare quick, flavorful meals that are ideal for busy days when time is short but quality matters.",
+    modal: "QuickEats",
     publishedDate: "November 23, 2024",
     readingTime: "7 minutes",
     author: "Liam Bennett",
   },
   {
     id: 7,
-    image: "/journaling.jpg",
-    title: "The Power of Journaling: Unlock Your Creative Potential",
+    image: "/slider7.jpg",
+    title: "Healthy Food: Eat Better, Feel Better",
     subTitle:
-      "Learn how journaling can help you express emotions, boost creativity, and track personal growth with simple daily practices.",
-    modal: "JournalFlow",
+      "Discover wholesome recipes that bring balance and flavor to your diet, making healthy eating a delicious habit.",
+    modal: "HealthierYou",
     publishedDate: "November 21, 2024",
     readingTime: "5 minutes",
     author: "Olivia Moore",
+  },
+];
+export const followData = [
+  {
+    id: 1,
+    image: "/breakfast1.jpg",
+  },
+  {
+    id: 2,
+    image: "/Butter-chicken-cooked-chicken-small.jpg",
+  },
+  {
+    id: 3,
+    image: "/Caprese-tomatocheese.jpg",
+  },
+  {
+    id: 4,
+    image: "/category1.jpg",
+  },
+  {
+    id: 5,
+    image: "/Cheesy-Vegetable-Omelette_7-1024x683.jpg",
+  },
+  {
+    id: 6,
+    image: "/Chicken-Biryani-16.jpg",
+  },
+  {
+    id: 7,
+    image: "/Green-Juice-Recipe-3-1200.jpg",
+  },
+  {
+    id: 8,
+    image: "/beverages5.jpg",
+  },
+  {
+    id: 9,
+    image: "/food6.jpg",
+  },
+  {
+    id: 10,
+    image: "/How-To-Make-Fried-Rice-Recipe-3-1.jpg",
+  },
+  {
+    id: 11,
+    image: "/lunch2.jpg",
+  },
+  {
+    id: 12,
+    image: "/quick4.jpg",
+  },
+  {
+    id: 13,
+    image: "/vegetable_stir_fry2-e1567268395109-1200x800.jpg",
+  },
+  {
+    id: 14,
+    image: "/vegetarian6.jpg",
+  },
+  {
+    id: 15,
+    image: "/recipe-vision.jpg",
+  },
+  {
+    id: 16,
+    image: "/snack3.jpg",
+  },
+  {
+    id: 17,
+    image: "/Spinach-Lasagna-1.jpg",
+  },
+  {
+    id: 18,
+    image: "/snack4.jpg",
+  },
+  {
+    id: 19,
+    image: "/snack2.jpg",
+  },
+  {
+    id: 20,
+    image: "/beverages2.jpg",
+  },
+  {
+    id: 21,
+    image: "/119c2c95b3f0108dbb5ab52abc5e5977.jpg",
+  },
+  {
+    id: 22,
+    image: "/beverages3.jpg",
+  },
+  {
+    id: 23,
+    image: "/food3.jpg",
+  },
+  {
+    id: 24,
+    image: "/food1.jpg",
   },
 ];

@@ -4,35 +4,37 @@ import { FaFacebook } from "react-icons/fa6";
 import { AiFillInstagram } from "react-icons/ai";
 import { FaTwitter } from "react-icons/fa";
 import Faqs from "../components/Faqs";
+import ContactCardSliderItems from "../components/ContactCardSliderItems";
 const Contact = () => {
   return (
     <div>
       <div className="xl:pt-32 pt-[100px] md:pt-[120px] bg-slate-100 text-center text-gray-600 px-4 ">
         <div className="flex justify-center items-center md:w-[88%] w-[95%] mx-auto  flex-col gap-y-4">
-          <h1 className="text-[30px] md:text-[40px] leading-[38px] xl:text-[43px] 2xl:text-[52px] lg:text-[42px] font-anton  tracking-wide">
-            We Would Love to Hear <span className="text-orange-500">From</span>{" "}
-            You!
+          <h1 className="text-[30px] md:text-[40px] leading-[38px] xl:text-[43zdpx] lg:text-[42px] font-anton  tracking-wide ">
+            We Would Love to Hear{" "}
+            <span className="text-hoverTextColor">From</span> You!
           </h1>
-          <p className="xl:text-[14px] lg:text-[15px] 2xl:text-[17px] md:text-[14px] text-[13px] text-gray-600 font-inter">
-            Have any questions, feedback, or collabration ideas? Feel free to
-            reach out using the form below.
+          <p className="xl:text-[14px] lg:text-[15px] 2xl:text-[17px] md:text-[14px] text-[13px] text-gray-600 font-inter xl:w-[700px]">
+            Got a question, an idea, or just want to say hello? We're here to
+            listen! Drop us a message using the form below and let's start a
+            conversation.
           </p>
 
           <div className="flex justify-center items-center gap-x-6 mt-6">
-            <Link href="/" className="hover:text-orange-500">
+            <Link href="/" className="hover:text-hoverTextColor">
               <FaFacebook className="xl:h-[27px] xl:w-[27px] h-[25px] w-[25px] md:h-[28px] md:w-[28px] 2xl:h-[35px] 2xl:w-[35px]" />
             </Link>
-            <Link href="/" className="hover:text-orange-500">
+            <Link href="/" className="hover:text-hoverTextColor">
               <AiFillInstagram className="xl:h-[29px] xl:w-[29px] h-[27px] w-[27px] md:h-[28px] md:w-[28px] 2xl:h-[40px] 2xl:w-[40px]" />
             </Link>
-            <Link href="/" className="hover:text-orange-500">
+            <Link href="/" className="hover:text-hoverTextColor">
               <FaTwitter className="xl:h-[27px] xl:w-[27px] h-[25px] w-[25px] md:h-[28px] md:w-[28px] 2xl:h-[35px] 2xl:w-[35px]" />
             </Link>
           </div>
           <div className="p-4 mx-auto md:max-w-[88%] max-w-[100%] shadow-lg  font-inter">
             <form className="mt-8 space-y-4">
               <input
-                type="text" 
+                type="text"
                 required
                 placeholder="Name"
                 className="w-full rounded-md xl:py-[8px] py-[6px] px-4 text-gray-900 bg-gray-300 focus:bg-gray-300 xl:text-[14px] md:text-[15px] text-[13px] outline-none 2xl:text-[18px]"
@@ -73,7 +75,7 @@ const Contact = () => {
                       <span className="border-[4px] border-[#011c2b] rounded-full w-full h-full"></span>
                     </label>
                     <p className="xl:text-[13px] text-[13px] 2xl:text-[15px] text-gray-500 whitespace-nowrap ml-2">
-                      Time Management
+                      Lunch
                     </p>
                   </div>
                   <div className="flex items-center">
@@ -90,7 +92,7 @@ const Contact = () => {
                       <span className="border-[4px] border-[#011c2b] rounded-full w-full h-full"></span>
                     </label>
                     <p className="xl:text-[13px] text-[13px] 2xl:text-[15px]  text-gray-500 whitespace-nowrap ml-2">
-                      Habbits & Routines
+                      Healthy Breakfast
                     </p>
                   </div>
                   <div className="flex items-center">
@@ -106,7 +108,9 @@ const Contact = () => {
                     >
                       <span className="border-[4px] border-[#011c2b] rounded-full w-full h-full"></span>
                     </label>
-                    <p className="xl:text-[13px] text-[13px] 2xl:text-[15px]  text-gray-500 whitespace-nowrap ml-2">Goal Setting</p>
+                    <p className="xl:text-[13px] text-[13px] 2xl:text-[15px]  text-gray-500 whitespace-nowrap ml-2">
+                      Vegetarian Food
+                    </p>
                   </div>
                   <div className="flex items-center">
                     <input
@@ -122,7 +126,7 @@ const Contact = () => {
                       <span className="border-[4px] border-[#011c2b] rounded-full w-full h-full"></span>
                     </label>
                     <p className="xl:text-[13px] text-[13px] 2xl:text-[15px]  text-gray-500 xl:whitespace-nowrap ml-2">
-                      Work-Life Balance
+                      Quick Meals
                     </p>
                   </div>
                   <div className="flex items-center">
@@ -139,15 +143,50 @@ const Contact = () => {
                       <span className="border-[4px] border-[#011c2b] rounded-full w-full h-full"></span>
                     </label>
                     <p className="xl:text-[13px] text-[13px] 2xl:text-[15px]  text-gray-500 xl:whitespace-nowrap ml-2">
-                      Personal Development
+                      Beverages
                     </p>
                   </div>
-                
+
+                  <div className="flex items-center">
+                    <input
+                      id="radio5"
+                      type="radio"
+                      name="value1"
+                      className="hidden peer"
+                    />
+                    <label
+                      htmlFor="radio5"
+                      className="relative p-0.5 flex items-center justify-center shrink-0 peer-checked:before:hidden before:block before:absolute before:w-full before:h-full before:bg-white md:w-4 md:h-4 h-4 w-4  cursor-pointer border-2 border-[#011c2b] rounded-full overflow-hidden"
+                    >
+                      <span className="border-[4px] border-[#011c2b] rounded-full w-full h-full"></span>
+                    </label>
+                    <p className="xl:text-[13px] text-[13px] 2xl:text-[15px]  text-gray-500 xl:whitespace-nowrap ml-2">
+                      Snacks
+                    </p>
+                  </div>
+
+                  <div className="flex items-center">
+                    <input
+                      id="radio5"
+                      type="radio"
+                      name="value1"
+                      className="hidden peer"
+                    />
+                    <label
+                      htmlFor="radio5"
+                      className="relative p-0.5 flex items-center justify-center shrink-0 peer-checked:before:hidden before:block before:absolute before:w-full before:h-full before:bg-white md:w-4 md:h-4 h-4 w-4  cursor-pointer border-2 border-[#011c2b] rounded-full overflow-hidden"
+                    >
+                      <span className="border-[4px] border-[#011c2b] rounded-full w-full h-full"></span>
+                    </label>
+                    <p className="xl:text-[13px] text-[13px] 2xl:text-[15px]  text-gray-500 xl:whitespace-nowrap ml-2">
+                      Healthy Food
+                    </p>
+                  </div>
                 </div>
               </div>
               <button
                 type="button"
-                className="text-white bg-gray-600 hover:bg-gray-800 tracking-wide rounded-md xl:text-[16px] md:text-[16px] px-4 xl:py-[7px] py-[6px] text-[15px] w-full"
+                className="text-white bg-hoverTextColor hover:bg-textColor tracking-wide rounded-md xl:text-[16px] md:text-[16px] px-4 xl:py-[7px] py-[6px] text-[15px] w-full"
               >
                 Send
               </button>
@@ -158,7 +197,7 @@ const Contact = () => {
               <div className="max-w-[88%] mx-auto px-4 sm:px-6 ">
                 <div className="lg:text-center">
                   <p className="mt-2 xl:text-[39px] lg:text-[40px] md:text-[38px] text-[34px] font-anton leading-8 font-semibold tracking-wider text-gray-600 ">
-                    About <span className="text-orange-500"> Us</span>
+                    About <span className="text-hoverTextColor"> Us</span>
                   </p>
                 </div>
 
@@ -166,7 +205,7 @@ const Contact = () => {
                   <div className="space-y-10 md:space-y-0 md:grid md:grid-cols-3 md:gap-x-[3rem] xl:gap-x-[8rem] md:gap-y-10">
                     <div className="flex">
                       <div>
-                        <div className="flex items-center justify-center xl:h-[37px] xl:w-[37px] 2xl:h-[42px] 2xl:w-[42px] h-[37px] w-[37px] rounded-md bg-gray-500 text-white">
+                        <div className="flex items-center justify-center xl:h-[37px] xl:w-[37px] 2xl:h-[42px] 2xl:w-[42px] h-[37px] w-[37px] rounded-md bg-hoverTextColor text-white">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             fill="none"
@@ -184,14 +223,14 @@ const Contact = () => {
                           Address
                         </p>
                         <p className="xl:text-[13px] text-[12px] 2xl:text-[14px]  text-gray-500 whitespace-nowrap">
-                          123 town, Pakistan
+                          Gourmet Street, Flavor Town, Pakistan
                         </p>
                       </div>
                     </div>
 
                     <div className="flex">
                       <div className="flex-shrink-0">
-                        <div className="flex items-center justify-center xl:h-[37px] xl:w-[37px]  h-[35px] w-[35px] 2xl:h-[42px] 2xl:w-[42px]   rounded-md bg-gray-500 text-white">
+                        <div className="flex items-center justify-center xl:h-[37px] xl:w-[37px]  h-[35px] w-[35px] 2xl:h-[42px] 2xl:w-[42px]   rounded-md bg-hoverTextColor text-white">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             fill="none"
@@ -209,14 +248,14 @@ const Contact = () => {
                           Phone number
                         </p>
                         <p className="xl:text-[13px] 2xl:text-[14px] text-[12px] text-gray-500 ">
-                          (555) 555-5555
+                          (123) 456-7890
                         </p>
                       </div>
                     </div>
 
                     <div className="flex">
                       <div className="flex-shrink-0">
-                        <div className="flex items-center justify-center xl:h-[37px] xl:w-[37px]  h-[37px] w-[37px]  2xl:h-[42px] 2xl:w-[42px]  rounded-md bg-gray-500 text-white">
+                        <div className="flex items-center justify-center xl:h-[37px] xl:w-[37px]  h-[37px] w-[37px]  2xl:h-[42px] 2xl:w-[42px]  rounded-md bg-hoverTextColor text-white">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             fill="none"
@@ -234,7 +273,7 @@ const Contact = () => {
                           Email
                         </p>
                         <p className="xl:text-[13px] text-[12px] 2xl:text-[14px]  text-gray-500 ">
-                          aspirehub@gmail.com
+                          flavorfusion@gmail.com
                         </p>
                       </div>
                     </div>

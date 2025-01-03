@@ -14,7 +14,7 @@ const HomeMarquee = () => {
               }}
             >
               {" "}
-              Don&apos;t miss our newest blog on Self Improvement Tips for 2024{" "}
+              Discover Delicious Recipes and Tips for a Healthy Lifestyle!
             </span>
           </Marquee>
         </div>

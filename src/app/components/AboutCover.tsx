@@ -4,9 +4,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { useRef } from "react";
 import SparklesCore from "./AboutSparklesCore";
 import { CoverPropTypes } from "../../../types/componentTypes";
-const Cover = ({
-  children,
-}: CoverPropTypes) => {
+const Cover = ({ children }: CoverPropTypes) => {
   const [hovered, setHovered] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
   const [containerWidth, setContainerWidth] = useState(0);
@@ -28,7 +26,7 @@ const Cover = ({
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
       ref={ref}
-      className="relative hover:bg-neutral-900  group/cover inline-block dark:bg-neutral-900 bg-neutral-100 px-2 py-2  cursor-pointer transition duration-200 rounded-sm"
+      className="relative hover:bg-neutral-900 group/cover inline-block dark:bg-neutral-900 bg-neutral-100 py-2 cursor-pointer transition duration-200 rounded-sm w-[150px] xl:w-[350px]"
     >
       <AnimatePresence>
         {hovered && (
@@ -171,11 +169,11 @@ export const Beam = ({
             y2: 0,
           }}
           transition={{
-            duration: hovered ? 0.5 : duration ?? 2,
+            duration: hovered ? 0.5 : (duration ?? 2),
             ease: "linear",
             repeat: Infinity,
             delay: hovered ? Math.random() * (1 - 0.2) + 0.2 : 0,
-            repeatDelay: hovered ? Math.random() * (2 - 1) + 1 : delay ?? 1,
+            repeatDelay: hovered ? Math.random() * (2 - 1) + 1 : (delay ?? 1),
           }}
         >
           <stop stopColor="#2EB9DF" stopOpacity="0" />
@@ -185,11 +183,9 @@ export const Beam = ({
       </defs>
     </motion.svg>
   );
-}
+};
 import { CircleIconTypes } from "../../../types/componentTypes";
-export const CircleIcon = ({
-  delay,
-}: CircleIconTypes) => {
+export const CircleIcon = ({ delay }: CircleIconTypes) => {
   return (
     <motion.div
       initial={{ opacity: 0.5 }}

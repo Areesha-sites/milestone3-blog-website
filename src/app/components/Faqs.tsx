@@ -2,10 +2,11 @@ import React from "react";
 const Faqs = () => {
   return (
     <>
-      <section className=" text-gray-900 bg-slate-100 py-3 min-h-screen">
+      <section className="text-gray-900 bg-slate-100 py-3 min-h-screen">
         <div className="container flex flex-col justify-center p-4 mx-auto md:p-8">
-          <h2 className="mb-12 text-center text-[30px] leading-[37px]  mt-2 xl:text-[35px] lg:text-[38px] font-anton md:text-[35px] lg:leading-8 font-extrabold tracking-wider text-gray-600 2xl:text-[40px] ">
-            Frequently Asked <span className="text-orange-500"> Questions</span>
+          <h2 className="mb-12 text-center text-[30px] leading-[37px] mt-2 xl:text-[35px] lg:text-[38px] font-anton md:text-[35px] lg:leading-8 font-extrabold tracking-wider text-gray-600 2xl:text-[40px]">
+            Frequently Asked{" "}
+            <span className="text-hoverTextColor"> Questions</span>
           </h2>
           <h2 className="font-inter md:text-[23px] xl:text-[22px] 2xl:text-[26px] text-[20px] text-gray-700 text-left font-bold py-3 ml-[9%]">
             General Questions
@@ -17,124 +18,118 @@ const Faqs = () => {
               </summary>
               <div className="px-4 pb-4 text-[13px] xl:text-[14px] 2xl:text-[18px]">
                 <p>
-                  This blog focuses on providing valuable content on technology,
-                  lifestyle, and personal growth.
+                  Our food blog is dedicated to sharing delicious recipes,
+                  cooking tips, and food stories to inspire your culinary
+                  journey.
                 </p>
               </div>
             </details>
             <details>
               <summary className="py-2 outline-none xl:text-[14px] 2xl:text-[18px] text-[13px] cursor-pointer focus:underline">
-                How often do you publish new posts?
+                How often do you post new recipes?
               </summary>
               <div className="px-4 pb-4 text-[13px] xl:text-[14px] 2xl:text-[18px] ">
                 <p>
-                  We publish new posts every week to ensure fresh content for
-                  our readers.
+                  We post new recipes every week to keep you inspired in the
+                  kitchen.
                 </p>
               </div>
             </details>
             <details>
               <summary className="py-2 text-[13px] xl:text-[14px] 2xl:text-[18px] outline-none cursor-pointer focus:underline">
-                Can I suggest a topic for the blog?
+                Are the recipes beginner-friendly?
               </summary>
               <div className="px-4 pb-4 text-[13px] xl:text-[14px] 2xl:text-[18px] ">
                 <p>
-                  Yes, we welcome suggestions! Use the Contact Us form to share
-                  your ideas.
+                  Yes, our recipes cater to all skill levels, from beginners to
+                  advanced cooks.
                 </p>
               </div>
             </details>
             <details>
               <summary className="py-2 text-[13px] xl:text-[14px] 2xl:text-[18px] outline-none cursor-pointer focus:underline">
-                Are the articles free to read?
+                Can I share your recipes on social media?
               </summary>
               <div className="px-4 pb-4 text-[13px] xl:text-[14px] 2xl:text-[18px]">
-                <p>Yes, all our blog articles are completely free to access.</p>
+                <p>
+                  Absolutely! Just remember to credit us and link back to our
+                  blog.
+                </p>
               </div>
             </details>
             <details>
               <summary className="py-2 text-[13px] xl:text-[14px] 2xl:text-[18px] outline-none cursor-pointer focus:underline">
-                How can I stay updated with your latest posts?
+                Do you offer vegetarian or vegan recipes?
               </summary>
               <div className="px-4 pb-4 text-[13px] xl:text-[14px] 2xl:text-[18px]">
                 <p>
-                  Subscribe to our newsletter or follow us on social media to
-                  get updates.
+                  Yes, we have a variety of vegetarian and vegan recipes for our
+                  readers.
                 </p>
               </div>
             </details>
           </div>
           <h2 className="font-inter md:text-[23px] text-[20px] xl:text-[22px] 2xl:text-[26px] leading-[25px] text-gray-700 text-left font-bold py-3 ml-[9%]">
-            Guest Posts and Collaborations
+            Recipe Suggestions and Contributions
           </h2>
           <div className="flex flex-col divide-y sm:px-8 lg:px-12 xl:px-32 divide-gray-400 font-inter">
             <details>
               <summary className="py-2 outline-none text-[13px] 2xl:text-[18px] xl:text-[14px] cursor-pointer focus:underline">
-                How do I submit a guest post?
+                Can I request a specific recipe?
               </summary>
               <div className="px-4 pb-4 text-[13px] xl:text-[14px] 2xl:text-[18px]">
                 <p>
-                  Contact us through the provided form and attach your article
-                  for review.
+                  Yes, we love hearing from our readers! You can use the Contact
+                  Us form to share your recipe ideas.
                 </p>
               </div>
             </details>
             <details>
               <summary className="py-2 text-[13px] xl:text-[14px] 2xl:text-[18px] outline-none cursor-pointer focus:underline">
-                What are the guidelines for submitting a guest post?
+                Can I contribute my own recipe?
               </summary>
               <div className="px-4 pb-4 text-[13px] xl:text-[14px] 2xl:text-[18px]">
                 <p>
-                  Your post should align with our blogs theme, be
-                  original, and between 800 to 1500 words.
+                  Absolutely! Send us your recipe through our submission form,
+                  and we will feature it if it meets our guidelines.
                 </p>
               </div>
             </details>
             <details>
               <summary className="py-2 text-[13px] xl:text-[14px] 2xl:text-[18px] outline-none cursor-pointer focus:underline">
-                How long does it take to review a guest post?
+                Do you collaborate with food bloggers?
               </summary>
               <div className="px-4 pb-4 text-[13px] xl:text-[14px] 2xl:text-[18px]">
                 <p>
-                  We typically review guest posts within 7 to 10 business days.
+                  Yes, we are always open to collaborations. Reach out to us via
+                  email for more details.
                 </p>
               </div>
             </details>
             <details>
               <summary className="py-2 text-[13px] xl:text-[14px] 2xl:text-[18px] outline-none cursor-pointer focus:underline">
-                Can I include backlinks in my guest post?
+                Can I include photos with my recipe submissions?
               </summary>
               <div className="px-4 pb-4 text-[13px] xl:text-[14px] 2xl:text-[18px]">
                 <p>
-                  Yes, but only if they are relevant and add value to the
-                  content.
-                </p>
-              </div>
-            </details>
-            <details>
-              <summary className="py-2 text-[13px] xl:text-[14px] 2xl:text-[18px] outline-none cursor-pointer focus:underline">
-                Do you pay for guest posts?
-              </summary>
-              <div className="px-4 pb-4 text-[13px] xl:text-[14px] 2xl:text-[18px]">
-                <p>
-                  Currently, we do not offer payments for guest posts but
-                  provide full credit and promotion.
+                  Yes, high-quality photos are encouraged and will make your
+                  recipe stand out.
                 </p>
               </div>
             </details>
           </div>
           <h2 className="font-inter md:text-[23px] xl:text-[22px]  2xl:text-[26px] text-[20px] leading-[25px] text-gray-700 text-left font-bold py-3 ml-[9%]">
-            Newsletter and Subscription.
+            Newsletter and Updates
           </h2>
           <div className="flex flex-col divide-y sm:px-8 lg:px-12 xl:px-32 divide-gray-400 font-inter">
             <details>
               <summary className="py-2 text-[13px]  xl:text-[14px] 2xl:text-[18px] outline-none cursor-pointer focus:underline">
-                How do I subscribe to the newsletter?
+                How can I subscribe to your newsletter?
               </summary>
               <div className="px-4 pb-4 text-[13px] xl:text-[14px] 2xl:text-[18px]">
                 <p>
-                  Enter your email in the subscription box available on our
-                  website and hit subscribe.
+                  Enter your email in the subscription box on our homepage and
+                  click subscribe.
                 </p>
               </div>
             </details>
@@ -143,38 +138,19 @@ const Faqs = () => {
                 Is the newsletter free?
               </summary>
               <div className="px-4 pb-4 text-[13px] xl:text-[14px] 2xl:text-[18px]">
-                <p>Yes, subscribing to our newsletter is completely free.</p>
-              </div>
-            </details>
-            <details>
-              <summary className="py-2 text-[13px] xl:text-[14px] 2xl:text-[18px] outline-none cursor-pointer focus:underline">
-                Why am I not receiving newsletter emails?
-              </summary>
-              <div className="px-4 pb-4 text-[13px] xl:text-[14px] 2xl:text-[18px]">
                 <p>
-                  Check your spam folder or ensure the email address was entered
-                  correctly.
+                  Yes, it is completely free to subscribe and receive updates.
                 </p>
               </div>
             </details>
             <details>
               <summary className="py-2 text-[13px] xl:text-[14px] 2xl:text-[18px] outline-none cursor-pointer focus:underline">
-                Can I unsubscribe from the newsletter?
+                What type of updates do I receive?
               </summary>
               <div className="px-4 pb-4 text-[13px] xl:text-[14px] 2xl:text-[18px]">
                 <p>
-                  Yes, every email includes an Unsubscribe link at the bottom.
-                </p>
-              </div>
-            </details>
-            <details>
-              <summary className="py-2 text-[13px] xl:text-[14px] 2xl:text-[18px] outline-none cursor-pointer focus:underline">
-                What type of content is included in the newsletter?
-              </summary>
-              <div className="px-4 pb-4 text-[13px] xl:text-[14px] 2xl:text-[18px]">
-                <p>
-                  We share the latest blog updates, exclusive content, and
-                  occasional tips.
+                  You will receive new recipes, cooking tips, and exclusive blog
+                  updates.
                 </p>
               </div>
             </details>

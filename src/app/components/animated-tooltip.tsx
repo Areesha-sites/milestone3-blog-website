@@ -1,7 +1,13 @@
 "use client";
 import Image from "next/image";
 import React, { useState } from "react";
-import { motion, useTransform, useMotionValue, useSpring, AnimatePresence } from "framer-motion";
+import {
+  motion,
+  useTransform,
+  useMotionValue,
+  useSpring,
+  AnimatePresence,
+} from "framer-motion";
 export const AnimatedTooltip = ({
   items,
 }: {
@@ -25,7 +31,7 @@ export const AnimatedTooltip = ({
   );
   const handleMouseMove = (event: React.MouseEvent<HTMLImageElement>) => {
     const target = event.target as HTMLImageElement;
-    const halfWidth = target.offsetWidth / 2; 
+    const halfWidth = target.offsetWidth / 2;
     x.set(event.nativeEvent.offsetX - halfWidth);
   };
   return (

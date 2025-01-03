@@ -4,37 +4,37 @@ export function AnimatedTestimonialsDemo() {
   const testimonials: TestimonialsTypes[] = [
     {
       quote:
-        "The attention to detail and innovative features have completely transformed our workflow. This is exactly what we've been looking for.",
+        "This recipe blog has completely transformed my cooking! The creative recipes and detailed instructions have taken my meals to the next level.",
       name: "Sarah Chen",
-      designation: "Product Manager at TechFlow",
+      designation: "Home Chef",
       src: "/testimonial1.jpg",
     },
     {
       quote:
-        "Implementation was seamless and the results exceeded our expectations. The platform's flexibility is remarkable.",
+        "The variety of recipes and cooking tips are amazing! I've learned new techniques and discovered ingredients I never thought I'd try.",
       name: "Michael Rodriguez",
-      designation: "CTO at InnovateSphere",
+      designation: "Food Enthusiast",
       src: "/testimonial2.jpg",
     },
     {
       quote:
-        "This solution has significantly improved our team's productivity. The intuitive interface makes complex tasks simple.",
+        "I love how easy the recipes are to follow, and they always turn out delicious. This blog has become my go-to for meal inspiration!",
       name: "Emily Watson",
-      designation: "Operations Director at CloudScale",
+      designation: "Blogger at The Cooking Chronicles",
       src: "/testimonial3.jpg",
     },
     {
       quote:
-        "Outstanding support and robust features. It's rare to find a product that delivers on all its promises.",
+        "As a beginner, I was intimidated by cooking, but this blog made it so approachable and fun. I'm now cooking with confidence every day!",
       name: "James Kim",
-      designation: "Engineering Lead at DataPro",
+      designation: "Beginner Cook",
       src: "/testimonial4.jpg",
     },
     {
       quote:
-        "The scalability and performance have been game-changing for our organization. Highly recommend to any growing business.",
+        "This blog has made cooking so much more enjoyable. The easy-to-follow recipes and tips have helped me improve my skills in the kitchen.",
       name: "Lisa Thompson",
-      designation: "VP of Technology at FutureNet",
+      designation: "Home Baker",
       src: "/testimonial5.jpg",
     },
   ];

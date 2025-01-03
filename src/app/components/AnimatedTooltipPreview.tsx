@@ -2,48 +2,43 @@
 import React from "react";
 import { AnimatedTooltip } from "./animated-tooltip";
 import { PeoplePropTypes } from "../../../types/componentTypes";
+
 const people: PeoplePropTypes[] = [
   {
     id: 1,
-    name: "John Doe",
-    designation: "Software Engineer",
-    image:
-      "/team1.jpg",
+    name: "Sarah Johnson",
+    designation: "Head Chef & Recipe Developer",
+    image: "/team1.jpg",
   },
   {
     id: 2,
-    name: "Robert Johnson",
-    designation: "Product Manager",
-    image:
-    "/team2.jpg",
+    name: "Robert Green",
+    designation: "Food Photographer",
+    image: "/team2.jpg",
   },
   {
     id: 3,
-    name: "Jane Smith",
-    designation: "Data Scientist",
-    image:
-    "/team3.jpg",
+    name: "Emily Lee",
+    designation: "Culinary Content Writer",
+    image: "/team3.jpg",
   },
   {
     id: 4,
-    name: "Emily Davis",
-    designation: "UX Designer",
-    image:
-    "/team4.jpg",
+    name: "David Brown",
+    designation: "Nutrition Expert & Blogger",
+    image: "/team4.jpg",
   },
   {
     id: 5,
-    name: "Tyler Durden",
-    designation: "Web Developer",
-    image:
-    "/team5.jpg",
+    name: "Tyler Simmons",
+    designation: "Recipe Tester & Reviewer",
+    image: "/team5.jpg",
   },
   {
     id: 6,
-    name: "Dora",
-    designation: "The Explorer",
-    image:
-    "/team6.jpg",
+    name: "Mia Williams",
+    designation: "Food Styling & Creative Director",
+    image: "/team6.jpg",
   },
 ];
 

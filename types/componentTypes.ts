@@ -141,3 +141,7 @@ export interface CategorySelectionPropTypes {
   activeCategory: string | null;
   selectedCategory: string | null;
 }
+export interface FollowProps {
+  id: number;
+  image: string;
+}

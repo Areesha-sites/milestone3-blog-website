@@ -69,28 +69,6 @@ const Footer = () => {
       name: "Projects",
     },
   ];
-  const footerBussinessLinks: FooterLinksTypes[] = [
-    {
-      path: "/",
-      name: "Infopreneur",
-    },
-    {
-      path: "/",
-      name: "Personal",
-    },
-    {
-      path: "/",
-      name: "Wiki",
-    },
-    {
-      path: "/",
-      name: "Forum",
-    },
-    {
-      path: "/",
-      name: "Projects",
-    },
-  ];
   const footerSocialIcons: FooterSocialIconsTypes[] = [
     {
       adrress: "/",
@@ -111,24 +89,20 @@ const Footer = () => {
   ];
   return (
     <>
-      <div className="bg-black">
+      <div className="bg-slate-100 ">
         <div className="px-4 xl:pt-9 pt-6 xl:mx-[8.5%] mx-[3%]  sm:max-w-xl md:max-w-full lg:max-w-screen-auto md:px-24 lg:px-4">
           <div className="flex items-start justify-start mb-8">
-            <div className="text-[18px] md:text-[1.5rem] italic flex font-medium items-center text-white">
-              <span className="md:text-[2rem] text-[1.5rem] font-bold text-orange-500">
-                A
-              </span>
-              spire
-              <span className="md:text-[2rem] text-[1.5rem] font-bold text-orange-500">
-                H
-              </span>
-              ub
+            <div className="text-[18px] md:text-[1.5rem] italic flex font-bold items-center">
+              <p className="text-hoverTextColor">
+                <span className="text-bgbuttonColor">F</span>lavor
+                <span className="text-bgbuttonColor">F</span>usion
+              </p>
             </div>
           </div>
           <div className=" grid mb-8 lg:grid-cols-6">
             <div className="grid grid-cols-2 gap-5 lg:col-span-4 md:grid-cols-4">
               <div className="">
-                <p className="font-medium xl:text-[17px] text-[17px] 2xl:text-[19px] tracking-wide text-gray-300 ">
+                <p className="font-medium xl:text-[17px] text-[17px] 2xl:text-[19px] tracking-wide text-black/80">
                   Category
                 </p>
                 <ul className="mt-2 xl:space-y-1 space-y-1">
@@ -137,7 +111,7 @@ const Footer = () => {
                       <Link
                         key={index}
                         href={link.path}
-                        className="text-gray-500 text-[11px] xl:text-[12px] 2xl:text-[16px] transition-colors duration-300 hover:text-orange-500"
+                        className="text-black/65 text-[11px] xl:text-[12px] 2xl:text-[16px] transition-colors duration-300 hover:text-hoverTextColor"
                       >
                         {link.name}
                       </Link>
@@ -146,7 +120,7 @@ const Footer = () => {
                 </ul>
               </div>
               <div className="">
-                <p className="font-medium tracking-wide xl:text-[17px] 2xl:text-[19px] text-[17px] text-gray-300 ">
+                <p className="font-medium tracking-wide xl:text-[17px] 2xl:text-[19px] text-[17px] text-black/80">
                   Apples
                 </p>
 
@@ -156,7 +130,7 @@ const Footer = () => {
                       <Link
                         key={index}
                         href={link.path}
-                        className="text-gray-500 text-[11px] xl:text-[12px]  2xl:text-[16px] transition-colors duration-300 hover:text-orange-500"
+                        className="text-black/65 text-[11px] xl:text-[12px] 2xl:text-[16px] transition-colors duration-300 hover:text-hoverTextColor"
                       >
                         {link.name}
                       </Link>
@@ -165,7 +139,7 @@ const Footer = () => {
                 </ul>
               </div>
               <div className="">
-                <p className="font-medium xl:text-[17px] text-[17px] 2xl:text-[19px] tracking-wide text-gray-300 ">
+                <p className="font-medium xl:text-[17px] text-[17px] 2xl:text-[19px] tracking-wide text-black/80 ">
                   Cherry
                 </p>
                 <ul className="mt-2 xl:space-y-1 space-y-1">
@@ -174,25 +148,7 @@ const Footer = () => {
                       <Link
                         key={index}
                         href={link.path}
-                        className="text-gray-500 text-[11px] xl:text-[12px]  2xl:text-[16px] transition-colors duration-300 hover:text-orange-500"
-                      >
-                        {link.name}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-              <div className="">
-                <p className="font-medium xl:text-[17px] text-[17px] 2xl:text-[19px] tracking-wide text-gray-300 ">
-                  Business
-                </p>
-                <ul className="mt-2 xl:space-y-1 space-y-1">
-                  {footerBussinessLinks.map((link, index) => (
-                    <li key={index}>
-                      <Link
-                        key={index}
-                        href={link.path}
-                        className="text-gray-500 text-[11px] xl:text-[12px]  2xl:text-[16px] transition-colors duration-300 hover:text-orange-500"
+                        className="text-black/65 text-[11px] xl:text-[12px] 2xl:text-[16px] transition-colors duration-300 hover:text-hoverTextColor"
                       >
                         {link.name}
                       </Link>
@@ -201,37 +157,36 @@ const Footer = () => {
                 </ul>
               </div>
             </div>
-            <div className="md:max-w-md lg:col-span-2 lg:mt-0 mt-5">
-              <p className="font-medium xl:text-[18px] 2xl:text-[23px] text-[17px] tracking-wide text-gray-300 ">
-                Subscribe for updates
+            <div className="xl:w-[550px] lg:w-[490px] md:w-[500px] mx-auto md:h-[150px] h-[300px] bg-textColor relative lg:left-[-170px] flex justify-center items-center px-3 py-2 flex-col mt-6 w-full">
+              <div className="flex justify-center gap-[7px] items-center">
+                <span className="md:text-[18px] text-[16px] font-light text-bgbuttonColor uppercase font-anton text-center">
+                  signup
+                </span>
+                <p className="md:text-[20px] text-[18px] font-bold text-white font-sans uppercase">
+                  for Email Updates
+                </p>
+              </div>
+              <p className="text-white/70 font-sans font-normal italic text-[12px] md:text-[14px]">
+                Get a Free eCookbook with our top 25 recipes
               </p>
-              <form
-                action=""
-                className="xl:mt-4 mt-2 flex flex-col md:flex-row  "
-              >
+              <div className="flex justify-start md:flex-row flex-col gap-[10px] mt-4">
                 <input
-                  type="email"
-                  name="email"
-                  id="email"
-                  className="flex-grow w-full xl:h-10 h-8 text-[12px] 2xl:text-[16px] 2xl:h-12 px-4 mb-3 transition duration-200 bg-white border border-gray-300 rounded shadow-sm aspect-auto md:mr-2 md:mb-0 focus:border-purple-400 focus:outline-none"
+                  type="text"
+                  placeholder="First Name"
+                  className="bg-white text-[14px] w-[200px] h-[40px] px-4 py-2 text-black/50 font-lato border-none outline-none"
                 />
-                <button
-                  type="submit"
-                  className="inline-flex items-center justify-center xl:h-10 h-8 2xl:h-12 2xl:text-[16px] text-[14px] px-6 font-semibold tracking-wide text-white transition duration-200 rounded shadow-md hover:bg-orange-500 focus:outline-none border "
-                >
-                  Subscribe
+                <input
+                  type="mail"
+                  placeholder="Email"
+                  className="bg-white text-[14px] w-[200px] h-[40px] px-4 py-2 text-black/50 font-lato border-none outline-none"
+                />
+                <button className="bg-bgbuttonColor md:w-[40px] w-full h-[40px] flex justify-center items-center text-[18px] font-sans text-white font-bold hover:bg-bgButtonHover">
+                  Go
                 </button>
-              </form>
-              <p className="mt-4 xl:text-[12px] text-[12px] 2xl:text-[16px] text-gray-500">
-                Subscribe to our newsletter and join a community dedicated to
-                personal growth and self-improvement. Be the first to receive
-                motivational tips, exclusive self-help resources, and actionable
-                advice directly in your inbox. Take the first step toward
-                becoming the best version of yourself-sign up now!
-              </p>
+              </div>
             </div>
           </div>
-          <div className="flex flex-col justify-between pt-5 pb-10 border-t border-gray-800 sm:flex-row ">
+          <div className="flex flex-col justify-between pt-5 pb-10 border-t border-black/30 sm:flex-row ">
             <p className="text-gray-500 text-[13px] 2xl:text-[15px]">
               ©Copyright 2024 | All right Reserved.
             </p>
@@ -239,7 +194,7 @@ const Footer = () => {
               {footerSocialIcons.map((link, index) => (
                 <Link
                   key={index}
-                  className="text-gray-500 transition-all duration-300 hover:text-orange-500"
+                  className="text-gray-500 transition-all duration-300 hover:text-hoverTextColor"
                   href={link.adrress}
                 >
                   {link.icons}

@@ -41,7 +41,7 @@ const SparklesCore = (props: ParticlesPropsTypes) => {
       {init && (
         <Particles
           id={id || generatedId}
-          className={("h-full w-full")}
+          className={"h-full w-full"}
           particlesLoaded={particlesLoaded}
           options={{
             background: {
@@ -66,8 +66,8 @@ const SparklesCore = (props: ParticlesPropsTypes) => {
                   mode: "repulse",
                 },
                 resize: {
-                  enable: true
-                } ,
+                  enable: true,
+                },
               },
               modes: {
                 push: {

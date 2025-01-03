@@ -1,4 +1,3 @@
-"use client";
 import React from "react";
 import { PaginationPropTypes } from "../../../types/componentTypes";
 const Pagination = ({
@@ -8,13 +7,14 @@ const Pagination = ({
   pageSize,
 }: PaginationPropTypes) => {
   const totalPages = Math.ceil(totalBlogs / pageSize);
+
   const renderPaginationLinks = () => {
     return Array.from({ length: totalPages }, (_, i) => i + 1).map(
       (pageNumber) => (
         <button
           key={pageNumber}
           onClick={() => onPageChange(pageNumber)}
-          className={`lg:min-w-9 min-w-[29px] mx-auto rounded-md lg:py-2 lg:px-3 py-1 px-1 border text-center lg:text-sm text-[12px]  transition-all shadow-sm xl:ml-2 ${
+          className={`lg:min-w-9 min-w-[20px] mx-auto rounded-md lg:py-2 lg:px-3 py-1 px-3 border text-center lg:text-sm text-[12px] transition-all shadow-sm xl:ml-2 flex justify-center items-center ${
             pageNumber === currentPage
               ? "bg-slate-800 text-white border-transparent shadow-md hover:bg-slate-700"
               : "border-slate-300 text-slate-600 hover:bg-slate-800 hover:text-white hover:border-slate-800 shadow-md shadow-slate-300 "
@@ -48,4 +48,5 @@ const Pagination = ({
     </div>
   );
 };
+
 export default Pagination;

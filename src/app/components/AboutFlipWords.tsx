@@ -2,10 +2,7 @@
 import React, { useCallback, useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { FlipsWordsPropTypes } from "../../../types/componentTypes";
-export const FlipWords = ({
-  words,
-  duration = 3000,
-}: FlipsWordsPropTypes) => {
+export const FlipWords = ({ words, duration = 3000 }: FlipsWordsPropTypes) => {
   const [currentWord, setCurrentWord] = useState(words[0]);
   const [isAnimating, setIsAnimating] = useState<boolean>(false);
   const startAnimation = useCallback(() => {
@@ -50,7 +47,7 @@ export const FlipWords = ({
           position: "absolute",
         }}
         className={`(
-          "z-10 inline-block relative text-left text-orange-500 dark:text-neutral-100 px-2",
+          "z-10 inline-block relative text-left text-hoverTextColor dark:text-neutral-100 px-2",
           className
         )`}
         key={currentWord}

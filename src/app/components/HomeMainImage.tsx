@@ -4,9 +4,9 @@ export default function HomeMainImage() {
   return (
     <div className=" xl:ml-[-20%] group/card mt-8 xl:mt-12">
       <div
-        className="cursor-pointer overflow-hidden relative xl:h-[22rem] 2xl:h-[30rem] 2xl:max-w-2xl h-[13rem] md:h-[15rem] lg:h-[17rem] lg:max-w-xs xl:w-full shadow-xl shadow-gray-300 rounded-md xl:max-w-[400px] max-w-[270px] mx-auto flex flex-col justify-between p-4"
+        className="cursor-pointer overflow-hidden relative xl:h-[22rem] 2xl:h-[30rem] 2xl:max-w-2xl h-[13rem] md:h-[15rem] lg:h-[17rem] xl:w-full shadow-xl shadow-gray-300 rounded-md lg:max-w-[400px] max-w-[270px] mx-auto flex flex-col justify-between p-4"
         style={{
-          backgroundImage: "url('/person-climbing.jpg')",
+          backgroundImage: "url('/mainImage.jpg')",
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
@@ -21,20 +21,21 @@ export default function HomeMainImage() {
             className="xl:h-10 xl:w-10 h-8 w-8 rounded-full border-2 object-cover"
           />
           <div className="flex flex-col">
-            <p className="font-normal xl:text-[13px] text-[12px]  2xl:text-[18px] text-gray-800 relative z-10">
-              Manu Arora
+            <p className="font-normal xl:text-[13px] text-[12px]  2xl:text-[18px] text-gray-100 relative z-10">
+              Chef Alex
             </p>
             <p className="xl:text-[10px] text-[10px] text-gray-400  2xl:text-[14px]">
-              2 min read
+              5 min read
             </p>
           </div>
         </div>
         <div className="text-content">
           <h1 className="font-bold xl:text-[15px] text-[13px]  2xl:text-[24px]  text-gray-50 relative z-10">
-            Alice Harper
+            FlavorFusion
           </h1>
-          <p className="font-bold xl:text-[12px] 2xl:text-[15px] text-[11px] text-gray-50 relative z-10 ">
-            The Journey to self-improvement begins with a single step.
+          <p className="font-bold xl:text-[12px] 2xl:text-[15px] text-[9px] text-gray-50 relative z-10 ">
+            Discover the magic of flavors in every bite, unlock a world of
+            delicious recipes that bring people together.
           </p>
         </div>
       </div>
