@@ -16,16 +16,10 @@ import { FaRegStar } from "react-icons/fa6";
 import { MdWatchLater } from "react-icons/md";
 import { ImSpoonKnife } from "react-icons/im";
 import { IoPrintOutline } from "react-icons/io5";
-
-interface BlogDetailsProps {
-  params: { slug: string };
-}
-
 // Main BlogDetails Component
-export default async function BlogDetails({ params }: BlogDetailsProps) {
+export default async function BlogDetails({ params }) {
   const { slug } = params;
 
-  // Query to fetch the blog post
   const query = `*[_type == "post" && slug.current == $slug][0]{
     title,
     summary,
@@ -46,11 +40,9 @@ export default async function BlogDetails({ params }: BlogDetailsProps) {
   }`;
 
   try {
-    // Fetch the post using the slug
     const post = await client.fetch(query, { slug });
 
     if (!post) {
-      // Handle case when no post is found
       return <div>Post not found</div>;
     }
   return (
@@ -307,18 +299,15 @@ export default async function BlogDetails({ params }: BlogDetailsProps) {
     return <div>Failed to load the post</div>;
   }
 }
-export async function generateStaticParams() {
-  try {
-    // Fetch all slugs from the Sanity CMS
-    const slugs: string[] = await client.fetch(`*[_type == "post"].slug.current`);
+// export async function generateStaticParams() {
+//   try {
+//     const slugs: string[] = await client.fetch(`*[_type == "post"].slug.current`);
 
-    // Return the slugs formatted for static paths
-    return slugs.map((slug) => ({
-      slug,
-    }));
-  } catch (error) {
-    // Handle errors during static paths generation
-    console.error("Error generating static params:", error);
-    return [];
-  }
-}
+//     return slugs.map((slug) => ({
+//       slug,
+//     }));
+//   } catch (error) {
+//     console.error("Error generating static params:", error);
+//     return [];
+//   }
+// }
