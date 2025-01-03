@@ -22,7 +22,8 @@ interface BlogDetailsProps {
 }
 
 export default async function BlogDetails({ params }: BlogDetailsProps) {
-  const { slug } = params;
+  const { slug } = params; // Destructure the slug from params
+
 
   const query = `*[_type == "post" && slug.current == $slug][0]{
     title,
@@ -46,7 +47,7 @@ export default async function BlogDetails({ params }: BlogDetailsProps) {
   const post = await client.fetch(query, { slug });
 
   if (!post) {
-    return <div>Post not found</div>;
+    return <div>Post not found</div>; // Handle no post case
   }
 
   return (
