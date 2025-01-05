@@ -4,21 +4,23 @@ import { MdWatchLater } from "react-icons/md";
 import { FaComments } from "react-icons/fa6";
 import Link from "next/link";
 import { urlForImage } from "../../../sanity/lib/image";
+
 const BlogCard = ({ post }) => {
   if (!post || !post.slug) {
     return null;
   }
+
   return (
     <div className="p-3 shadow-lg bg-white rounded cursor-pointer">
       <Link href={`/blogDetails/${post.slug}`}>
         <div>
           <div className="relative">
             <Image
-              height={100}
-              width={100}
               src={urlForImage(post.image)}
               alt={post.title}
-              quality={100}
+              width={1000}
+              height={1000}
+              quality={100} 
               className="w-full xl:h-[28vh] h-[30vh] md:h-[43vh] object-cover"
             />
             <div className="bg-transparent transition duration-300 absolute bottom-0 top-0 right-0 left-0 hover:bg-gray-900 opacity-25"></div>
@@ -26,7 +28,7 @@ const BlogCard = ({ post }) => {
               Cooking
             </div>
           </div>
-          <div className=" flex-grow">
+          <div className="flex-grow">
             <h1 className="mt-4 mb-2 text-[14px] xl:text-[16px] font-bold hover:text-hoverTextColor cursor-pointer uppercase leading-[20px]">
               {post.title}
             </h1>
