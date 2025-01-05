@@ -118,14 +118,15 @@ export default async function BlogDetails({ params }) {
           {post.summary}
         </p>
         {post.image && post.image.asset && (
-          <Image
-            src={urlForImage(post.image)}
-            alt={post.title}
-            height={300}
-            width={600}
-            className="rounded-lg lg:h-[500px] lg:w-[700px] w-full h-[300px] object-cover"
-          />
-        )}
+  <Image
+    src={urlForImage(post.image)}
+    alt={post.title}
+    height={300}
+    width={600}
+    quality={100}
+    className="rounded-lg lg:h-[500px] lg:w-[700px] w-full h-[300px] object-cover"
+  />
+)}
         <div className="border-b-[1px] border-black/30 w-full mx-auto"></div>
         <div className="lg:w-[600px] w-full h-auto lg:h-[200px] sm:w-[500px] bg-pink-300 bg-opacity-30 py-3 px-3 md:px-8 relative">
           <div className="md:w-[40px] md:h-[40px] h-[30px] w-[30px] bg-hoverTextColor rounded-full absolute md:left-[-16px] right-[-16px] top-[20px] flex justify-center items-center">
