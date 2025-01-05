@@ -12,7 +12,7 @@ const About = () => {
     setIsStoryVisible(!isStoryVisible);
   };
   return (
-    <div className="xl:py-16 xl:pt-28 pt-14 text-center min-h-screen text-gray-700 px-4 bg-slate-100">
+    <div className="xl:py-16 xl:pt-28 pt-20 text-center min-h-screen text-gray-700 px-4 bg-slate-100">
       <div className="flex justify-center items-center gap-5 mt-[1%] w-[100%] mx-auto ">
         <div>
           <AboutCoverDemo />

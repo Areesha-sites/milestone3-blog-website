@@ -21,7 +21,7 @@ const BlogSidebar = () => {
         className="h-[500px] w-[460px] object-cover"
       />
       <div className="flex justify-center items-center flex-col mt-3 w-full gap-y-[4px]">
-        <div className="bg-black/10 h-[45px] px-4 py-3 w-full">
+        <div className="bg-black/10 h-[45px] px-4 py-3 w-full md:w-[500px] lg:w-full">
           <p className="text-textColor font-bebasNeue lg:text-[12px] xl:text-[15px] tracking-wider font-black uppercase">
             Recipe Collections
           </p>
@@ -29,7 +29,7 @@ const BlogSidebar = () => {
         {categories.map((category) => (
           <div
             key={category.id}
-            className={`bg-black/10 h-[45px] px-4 py-3 w-full flex justify-between items-center cursor-pointer`}
+            className={`bg-black/10 h-[45px] px-4 py-3 w-full lg:w-full md:w-[500px] flex justify-between items-center cursor-pointer`}
           >
             <div className="flex justify-start gap-[6px] items-center">
               <div className="w-[15px] h-[15px] rounded-full bg-textColor flex justify-center items-center">

@@ -7,7 +7,7 @@ import Faqs from "../components/Faqs";
 const Contact = () => {
   return (
     <div>
-      <div className="xl:pt-32 pt-[100px] md:pt-[120px] bg-slate-100 text-center text-gray-600 px-4 ">
+      <div className="xl:pt-48 pt-[100px] md:pt-[140px] bg-slate-100 text-center text-gray-600 px-4 ">
         <div className="flex justify-center items-center md:w-[88%] w-[95%] mx-auto  flex-col gap-y-4">
           <h1 className="text-[30px] md:text-[40px] leading-[38px] xl:text-[43zdpx] lg:text-[42px] font-anton  tracking-wide ">
             We Would Love to Hear{" "}
@@ -221,7 +221,7 @@ const Contact = () => {
                         <p className="xl:text-[18px] text-[16px] 2xl:text-[23px] font-inter font-semibold leading-6 text-gray-900 opacity-70">
                           Address
                         </p>
-                        <p className="xl:text-[13px] text-[12px] 2xl:text-[14px]  text-gray-500 whitespace-nowrap">
+                        <p className="xl:text-[13px] text-[12px] 2xl:text-[14px]  text-gray-500 xl:whitespace-nowrap">
                           Gourmet Street, Flavor Town, Pakistan
                         </p>
                       </div>

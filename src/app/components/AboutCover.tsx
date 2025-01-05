@@ -26,7 +26,7 @@ const Cover = ({ children }: CoverPropTypes) => {
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
       ref={ref}
-      className="relative hover:bg-neutral-900 group/cover inline-block dark:bg-neutral-900 bg-neutral-100 py-2 cursor-pointer transition duration-200 rounded-sm w-[150px] xl:w-[350px]"
+      className="relative hover:bg-neutral-900 group/cover inline-block dark:bg-neutral-900 bg-neutral-100 py-2 cursor-pointer transition duration-200 rounded-sm w-[150px] xl:w-[350px] md:w-[450px]"
     >
       <AnimatePresence>
         {hovered && (

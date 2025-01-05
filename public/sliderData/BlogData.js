@@ -84,7 +84,7 @@ export const followData = [
   },
   {
     id: 2,
-    image: "/Butter-chicken-cooked-chicken-small.jpg",
+    image: "/slider2.jpg",
   },
   {
     id: 3,
@@ -96,7 +96,7 @@ export const followData = [
   },
   {
     id: 5,
-    image: "/Cheesy-Vegetable-Omelette_7-1024x683.jpg",
+    image: "/slider3.jpg",
   },
   {
     id: 6,
@@ -128,7 +128,7 @@ export const followData = [
   },
   {
     id: 13,
-    image: "/vegetable_stir_fry2-e1567268395109-1200x800.jpg",
+    image: "/slider4.jpg",
   },
   {
     id: 14,
@@ -136,7 +136,7 @@ export const followData = [
   },
   {
     id: 15,
-    image: "/recipe-vision.jpg",
+    image: "/slider6.jpg",
   },
   {
     id: 16,
@@ -144,7 +144,7 @@ export const followData = [
   },
   {
     id: 17,
-    image: "/Spinach-Lasagna-1.jpg",
+    image: "/slider5.jpg",
   },
   {
     id: 18,

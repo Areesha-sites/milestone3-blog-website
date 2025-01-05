@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 const Banner = () => {
   return (
     <>
-      <section className="px-4 min-h-screen pt-[100px] 2xl:pt-40">
+      <section className="px-4 min-h-screen pt-[100px] 2xl:pt-40 md:pt-[120px] ">
         <div className="flex justify-between xl:flex-row sm:flex-row flex-col md:flex-row items-center xl:w-[90%] mx-auto text-gray-800 w-[90%]">
           <div className="ml-11">
             {["Discover", "Flavors", "Beyond Borders"].map((item, index) => (

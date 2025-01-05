@@ -5,7 +5,7 @@ const Blogs = () => {
   return (
     <>
       <div className="">
-        <div className="xl:py-32 py-24 bg-slate-100 text-center px-4 lg:py-28 h-auto">
+        <div className="xl:py-32 py-24 pt-28 md:pt-36 bg-slate-100 text-center px-4 lg:py-28 xl:pt-44 h-auto">
           <h1 className="text-gray-600 uppercase font-anton xl:text-5xl text-3xl tracking-wider md:text-4xl lg:text-[42px]">
             Discover Delicious Recipes
           </h1>

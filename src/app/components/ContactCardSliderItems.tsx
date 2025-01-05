@@ -7,13 +7,13 @@ const ContactCardSliderItems = () => {
       <div className="slider-track">
         {followData.map((item) => (
           <div key={item.id} className="slider-item">
-            <ContactCardSlider image={item.image} id={item.id} />
+            <ContactCardSlider  image={item.image} id={item.id}  />
           </div>
         ))}
         {followData.map((item) => (
           <div key={`duplicate-${item.id}`} className="slider-item">
-            <ContactCardSlider image={item.image} id={item.id} />
-          </div>
+            <ContactCardSlider  image={item.image} id={item.id}  />
+            </div>
         ))}
       </div>
     </div>

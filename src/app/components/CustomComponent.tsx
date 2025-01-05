@@ -67,6 +67,7 @@ export const components: PortableTextComponents = {
             width={800}
             height={800}
             quality={100}
+            priority
             className="rounded-lg shadow-lg h-[200px] md:h-[400px] w-[600px] object-cover"
           />
         </div>
