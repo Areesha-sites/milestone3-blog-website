@@ -47,7 +47,7 @@ export const FlipWords = ({ words, duration = 3000 }: FlipsWordsPropTypes) => {
           position: "absolute",
         }}
         className={`(
-          "z-10 inline-block relative text-left text-hoverTextColor dark:text-neutral-100 px-2",
+          "z-10 inline-block relative text-left text-hoverTextColor dark:text-hoverTextColor px-2",
           className
         )`}
         key={currentWord}

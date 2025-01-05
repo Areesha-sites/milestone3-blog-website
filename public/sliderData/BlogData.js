@@ -124,7 +124,7 @@ export const followData = [
   },
   {
     id: 12,
-    image: "/quick4.jpg",
+    image: "/2e7bf5d85ea99dd03f9d7bcbb2344994.jpg",
   },
   {
     id: 13,

@@ -24,7 +24,7 @@ const About = () => {
       <div className="flex justify-center items-center xl:w-[60%] mx-auto py-2 opacity-80">
         <button
           onClick={toggleStoryVisibility}
-          className="text-white flex justify-center items-center bg-gradient-to-r from-textColor via-btnBgColor to-textColor hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-btnBgColor dark:focus:ring-gray-800 font-medium rounded-lg text-[11px] xl:text-[12px] xl:px-3 xl:py-2  px-4 py-1 text-center me-2 mb-2"
+          className="text-white flex justify-center items-center bg-gradient-to-r from-textColor via-btnBgColor to-textColor hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-btnBgColor dark:focus:ring-gray-500 font-medium rounded-lg text-[11px] xl:text-[12px] xl:px-3 xl:py-2 px-4 py-1 text-center me-2 mb-2"
         >
           {isStoryVisible ? "Hide Our Story" : "Click and Read our Journey"}{" "}
           <FaHandPointDown className="ml-2 xl:h-4 xl:w-4 h-3 w-3" />

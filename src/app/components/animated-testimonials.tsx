@@ -102,10 +102,10 @@ export const AnimatedTestimonials = ({
               ease: "easeInOut",
             }}
           >
-            <h3 className="xl:text-[23px] md:text-[1.6rem] text-[18px] font-bold dark:text-white text-gray-600">
+            <h3 className="xl:text-[23px] md:text-[1.6rem] text-[18px] font-bold dark:text-black text-gray-600">
               {testimonials[active].name}
             </h3>
-            <p className="xl:text-[13px] text-[10px]  text-gray-500 dark:text-neutral-500 ">
+            <p className="xl:text-[13px] text-[10px]  text-gray-500 dark:text-neutral-700 ">
               {testimonials[active].designation}
             </p>
             <motion.p className="xl:text-[13px] text-[11px] text-gray-500 mt-2 xl:mt-4 dark:text-neutral-300">
@@ -139,13 +139,13 @@ export const AnimatedTestimonials = ({
               onClick={handlePrev}
               className="h-7 w-7 rounded-full bg-gray-100 dark:bg-neutral-800 flex items-center justify-center group/button"
             >
-              <IconArrowLeft className="xl:h-6 xl:w-6 h-4 w-4 text-black dark:text-neutral-400 group-hover/button:rotate-12 transition-transform duration-300" />
+              <IconArrowLeft className="xl:h-6 xl:w-6 h-4 w-4 text-black dark:text-white group-hover/button:rotate-12 transition-transform duration-300" />
             </button>
             <button
               onClick={handleNext}
               className="h-7 w-7 rounded-full bg-gray-100 dark:bg-neutral-800 flex items-center justify-center group/button"
             >
-              <IconArrowRight className="xl:h-6 xl:w-6 h-4 w-4 text-black dark:text-neutral-400 group-hover/button:-rotate-12 transition-transform duration-300" />
+              <IconArrowRight className="xl:h-6 xl:w-6 h-4 w-4 text-black dark:text-white group-hover/button:-rotate-12 transition-transform duration-300" />
             </button>
           </div>
         </div>

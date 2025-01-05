@@ -9,7 +9,7 @@ export function FlipWordsDemo() {
         <FlipWords words={words} /> in the kitchen. Whether you are looking to
         spice up your meals, explore unique ingredients, or find the perfect
         recipe, we are here to inspire you! Join us on a journey of culinary
-        creativity and let is make every meal a memorable one!
+        creativity and let us make every meal a memorable one!
       </div>
     </div>
   );

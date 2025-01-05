@@ -22,15 +22,15 @@ const Timeline = ({ data }: { data: TimelineEntryTypes[] }) => {
   const opacityTransform = useTransform(scrollYProgress, [0, 0.1], [0, 1]);
   return (
     <div
-      className="w-full bg-gradient-to-bl from-gray-100 to-gray-200 dark:bg-neutral-950 font-sans md:px-10"
+      className="w-full bg-gradient-to-bl from-gray-100 to-gray-200 dark:bg-neutral-7 font-sans md:px-10"
       ref={containerRef}
     >
       <div className="max-w-7xl mx-auto xl:py-6 py-5 px-4 md:px-8 lg:px-10">
-        <h2 className="xl:text-[27px] text-[19px] font-anton md:text-[25px] uppercase tracking-wide mb-4 text-gray-600 dark:text-white">
+        <h2 className="xl:text-[27px] text-[19px] font-anton md:text-[25px] uppercase tracking-wide mb-4 text-gray-600 dark:text-gray-500">
           From a Passion for Cooking to Sharing Recipes{" "}
           <span className="text-hoverTextColor">My Culinary Journey</span>
         </h2>
-        <h3 className="text-gray-500 uppercase dark:text-neutral-300 font-inter font-bold text-[14px] xl:text-[18px] mt-5">
+        <h3 className="text-gray-500 uppercase dark:text-neutral-700 font-inter font-bold text-[14px] xl:text-[18px] mt-5">
           The Beginning: A Love for Flavors
         </h3>
         <p className="text-gray-500 italic text-[12px] xl:text-[15px] mb-2 xl:mb-0 xl:mt-7 mt-4 underline">
@@ -80,7 +80,7 @@ const Timeline = ({ data }: { data: TimelineEntryTypes[] }) => {
           style={{
             height: height + "px",
           }}
-          className="absolute md:left-8 left-8 top-0 overflow-hidden w-[2px] bg-[linear-gradient(to_bottom,var(--tw-gradient-stops))] from-transparent from-[0%] via-neutral-200 dark:via-neutral-700 to-transparent to-[99%] [mask-image:linear-gradient(to_bottom,transparent_0%,black_10%,black_90%,transparent_100%)] "
+          className="absolute md:left-8 left-8 top-0 overflow-hidden w-[2px] bg-[linear-gradient(to_bottom,var(--tw-gradient-stops))] from-transparent from-[0%] via-neutral-200 dark:via-neutral-300 to-transparent to-[99%] [mask-image:linear-gradient(to_bottom,transparent_0%,black_10%,black_90%,transparent_100%)] "
         >
           <motion.div
             style={{
@@ -92,7 +92,7 @@ const Timeline = ({ data }: { data: TimelineEntryTypes[] }) => {
         </div>
       </div>
       <div className="xl:max-w-7xl mx-auto xl:py-10 px-[43px] md:px-8 lg:px-10 ">
-        <h3 className="text-gray-500 uppercase dark:text-neutral-300 font-inter font-bold xl:mt-5 text-[14px] -mt-7 xl:text-[18px]">
+        <h3 className="text-gray-500 uppercase dark:text-neutral-700 font-inter font-bold xl:mt-5 text-[14px] -mt-7 xl:text-[18px]">
           5. A Note to My Foodies: Thank You for Being Here.
         </h3>
         <p className=" text-gray-500 text-[12px] italic xl:text-[15px] xl:mt-7 mt-3 underline ">

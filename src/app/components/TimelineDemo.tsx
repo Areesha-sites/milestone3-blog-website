@@ -8,7 +8,7 @@ export function TimelineDemo() {
       title: "Early 2023",
       content: (
         <div>
-          <p className="text-gray-500 uppercase dark:text-neutral-300 font-inter font-bold text-[14px] mt-5 mb-5 xl:text-[18px]">
+          <p className="text-gray-500 uppercase dark:text-neutral-700 font-inter font-bold text-[14px] mt-5 mb-5 xl:text-[18px]">
             2. The Spark: How I Fell in Love with Cooking.
           </p>
 
@@ -44,7 +44,7 @@ export function TimelineDemo() {
       title: "End of 2023",
       content: (
         <div>
-          <p className="text-gray-500 uppercase dark:text-neutral-300 font-inter font-bold text-[14px] mt-5 xl:mb-5 xl:text-[18px]">
+          <p className="text-gray-500 uppercase dark:text-neutral-700 font-inter font-bold text-[14px] mt-5 xl:mb-5 xl:text-[18px]">
             3. The Vision: Bringing Flavors to Every Home.
           </p>
           <p className=" text-gray-500 italic text-[12px] xl:text-[15px] mt-3 underline ">
@@ -77,7 +77,7 @@ export function TimelineDemo() {
       title: "2024",
       content: (
         <div>
-          <p className="text-gray-500 uppercase dark:text-neutral-300 font-inter xl:text-[18px] font-bold mt-5 xl:mb-5 text-[14px]">
+          <p className="text-gray-500 uppercase dark:text-neutral-700 font-inter xl:text-[18px] font-bold mt-5 xl:mb-5 text-[14px]">
             4. The Journey Continues: From Kitchen to Blog Stardom!
           </p>
           <p className=" text-gray-500 text-[12px] italic xl:text-[15px] mt-3 underline ">
