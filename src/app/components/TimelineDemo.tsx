@@ -63,7 +63,7 @@ export function TimelineDemo() {
           </p>
           <div className="flex justify-center items-center mt-5 ">
             <Image
-              src="/recipe-vision.jpg"
+              src="/about1.jpg"
               alt="vision"
               height={300}
               width={300}

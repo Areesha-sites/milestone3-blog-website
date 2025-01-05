@@ -88,7 +88,7 @@ export const followData = [
   },
   {
     id: 3,
-    image: "/Caprese-tomatocheese.jpg",
+    image: "/tomato.jpg",
   },
   {
     id: 4,
@@ -100,7 +100,7 @@ export const followData = [
   },
   {
     id: 6,
-    image: "/Chicken-Biryani-16.jpg",
+    image: "/0e4d24cae8c9783ae7c827df7cacb58d.jpg",
   },
   {
     id: 7,
