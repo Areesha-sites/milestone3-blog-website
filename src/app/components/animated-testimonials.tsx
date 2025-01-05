@@ -75,14 +75,14 @@ export const AnimatedTestimonials = ({
                     width={500}
                     height={500}
                     draggable={false}
-                    className="xl:max-h-[50vh] max-h-[48vh] md:max-w-[50vh] lg:max-h-[60vh]  lg:max-w-xs w-full rounded-3xl object-cover shadow-2xl"
+                    className="xl:max-h-[50vh] max-h-[48vh] md:max-w-[50vh] lg:max-h-[60vh] lg:max-w-xs w-full rounded-3xl object-cover shadow-2xl "
                   />
                 </motion.div>
               ))}
             </AnimatePresence>
           </div>
         </div>
-        <div className="flex xl:justify-center flex-col xl:mt-[-10%] xl:py-4 md:mt-[13%] mt-[-34%]">
+        <div className="flex xl:justify-center flex-col xl:mt-[-10%] xl:py-4 md:mt-[13%] mt-[-23%]">
           <motion.div
             key={active}
             initial={{
